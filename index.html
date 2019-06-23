@@ -22,20 +22,45 @@
 
 <body>
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-sm theme-color-pink px-0">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div>
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                </div>
+                <div class="col-12 d-inline d-sm-none vertical-list-container">
+                    <ul>
+                        <li>
+                            <a href="https://vk.com/psiholog_grodno">
+                                <img src="./images/vk.webp" class="social-img"><img>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/groups/psihologgrodno/">
+                                <img src="./images/facebook.webp" class="social-img"><img>
+                            </a>
+                        </li>
+                </div>
+            </div>
+        </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav w-100">
-                <a class="nav-item nav-link col-sm text-center active" href="index.html">Главная</a>
-                <a class="nav-item nav-link col-sm text-center" href="about.html">Обо&nbsp;мне</a>
-                <a class="nav-item nav-link col-sm text-center" href="method.html">Мой&nbsp;метод</a>
-                <a class="nav-item nav-link col-sm text-center" href="index.html#serviceContainer">Услуги</a>
-                <a class="nav-item nav-link col-sm text-center" href="articles.html">Статьи</a>
-                <a class="nav-item nav-link col-sm text-center" href="index.html#addressContainer">Связь</a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link text-center active" href="index.html">Главная</a>
+                <a class="nav-item nav-link text-center" href="about.html">Обо&nbsp;мне</a>
+                <a class="nav-item nav-link text-center" href="articles.html">Статьи</a>
+                <a class="nav-item nav-link text-center" href="index.html#addressContainer">Связь</a>
+                <a class="nav-item nav-link text-center d-none d-sm-inline" href="https://vk.com/psiholog_grodno">
+                    <img src="./images/vk.webp" class="social-img"><img>
+                </a>
+                <a class="nav-item nav-link text-center d-none d-sm-inline"
+                    href="https://www.facebook.com/groups/psihologgrodno/">
+                    <img src="./images/facebook.webp" class="social-img"><img>
+                </a>
             </div>
         </div>
     </nav>
