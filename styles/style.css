@@ -9,6 +9,14 @@ html * {
   color: #000000;
 }
 
+.theme-color-orange {
+  background-color: rgb(255, 210, 10) !important;
+}
+
+.theme-color-light-black {
+  background-color: rgb(33, 33, 33) !important;
+}
+
 .vertical-list-container ul {
   list-style-type: none;
   margin: 0;
@@ -24,4 +32,32 @@ html * {
   display: block;
   text-align: center;
   text-decoration: none;
+}
+
+#maininfo {
+  min-height: 600px;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/mainImage.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#infoTextContainer {
+  max-width: 300px;
+}
+
+.infoText {
+  color: white !important;
+}
+
+#iconsContainer
+{
+  min-height: 300px;
+}
+
+.single-limited-container{
+  width: 100%;
+  max-width: 980px;
 }
