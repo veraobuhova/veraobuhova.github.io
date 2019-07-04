@@ -3,9 +3,14 @@ html {
   height: 100%;
 }
 
-html * {
+/* html * {
   font-size: 1.1rem;
   font: normal normal normal 17px/1.4em 'open sans', sans-serif;
+  color: #000000;
+} */
+
+.font_0 {
+  font: normal normal normal 29px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
   color: #000000;
 }
 
@@ -34,6 +39,29 @@ html * {
   text-decoration: none;
 }
 
+.navbar-nav .nav-item {
+  line-height: 30px;
+}
+
+/* unvisited link */
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+/* mouse over link */
+.navbar-nav a:hover {
+  color: rgb(255, 210, 10) !important;
+}
+
+/* selected link */
+.navbar-nav .a:active {
+  color: rgb(255, 210, 10) !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: rgb(255, 210, 10) !important;
+}
+
 #maininfo {
   min-height: 600px;
   width: 100%;
@@ -45,19 +73,57 @@ html * {
 }
 
 #infoTextContainer {
-  max-width: 300px;
+  max-width: 360px;
 }
 
 .infoText {
-  color: white !important;
+  font: normal normal normal 60px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+  color: white;
 }
 
-#iconsContainer
-{
+.subInfoText {
+  font: normal normal normal 29px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+  color: white;
+}
+
+.infoLinkContainer {
+  min-height: 50px;
+}
+
+.infoLink {
+  font: normal normal normal 29px/1.4em helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+  color: white;
+  justify-content: center;
+  outline: solid rgba(255, 255, 255, 1) 2px;
+  outline-offset: 10px;
+  cursor: pointer !important;
+}
+
+.infoLinkContainer a {
+  color: white;
+}
+
+/* mouse over link */
+.infoLinkContainer a:hover {
+  color: rgb(255, 210, 10) !important;
+  outline: solid rgb(255, 210, 10) 2px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+/* selected link */
+.infoLinkContainer .a:active {
+  color: rgb(255, 210, 10) !important;
+  outline: solid rgb(255, 210, 10) 2px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+#iconsContainer {
   min-height: 300px;
 }
 
-.single-limited-container{
+.single-limited-container {
   width: 100%;
   max-width: 980px;
 }
