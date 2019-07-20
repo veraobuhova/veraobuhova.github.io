@@ -76,6 +76,7 @@ html {
   min-height: 600px;
   width: 100%;
   background-image: url('../images/main1.jpg');
+  /*TODO обрезать фотку по высоте (белое убрать)*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
