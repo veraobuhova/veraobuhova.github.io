@@ -32,27 +32,6 @@ html {
   background-color: rgb(33, 33, 33) !important;
 }
 
-.vertical-list-container ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.vertical-list-container ul li {
-  float: left;
-}
-
-.vertical-list-container ul li a {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-}
-
-.navbar-nav .nav-item {
-  line-height: 30px;
-}
-
 /* unvisited link */
 .navbar-light .navbar-nav .nav-link {
   color: black;
@@ -72,65 +51,65 @@ html {
   color: rgb(255, 210, 10) !important;
 }
 
-#maininfo {
-  min-height: 600px;
+.nav-link-icon-ref {
+  display: inline !important;
+  text-align: center !important;
+  padding: 0;
+}
+
+#mainImg {
+  height: 100%;
   width: 100%;
-  background-image: url('../images/main1.jpg');
-  /*TODO обрезать фотку по высоте (белое убрать)*/
+  background-image: url('../images/main2.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-#infoTextContainer {
-  max-width: 360px;
-}
-
 .infoText {
-  font: normal normal normal 60px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+  font: normal normal normal 50px/1.3em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
   color: black;
 }
 
 .subInfoText {
-  font: normal normal normal 29px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+  font: normal normal normal 30px/1.3em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
   color: black;
 }
 
-.infoLinkContainer {
-  min-height: 50px;
+.infoLinkText{
+  font: normal normal normal 28px/1.3em helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+  color: black;
+}
+
+.infoNoteText{
+  font: normal normal normal 15px/1em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+  color: black;
 }
 
 .infoLink {
-  font: normal normal normal 29px/1.4em helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
-  color: white;
+  border: solid rgba(0, 0, 0, 1) 2px;
   justify-content: center;
-  outline: solid rgba(255, 255, 255, 1) 2px;
-  outline-offset: 10px;
+  padding: 15px 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
   cursor: pointer !important;
-}
-
-.infoLinkContainer a {
-  color: white;
 }
 
 /* mouse over link */
 .infoLinkContainer a:hover {
   color: rgb(255, 210, 10) !important;
-  outline: solid rgb(255, 210, 10) 2px;
+  border: solid rgb(255, 210, 10) 2px;
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 /* selected link */
 .infoLinkContainer .a:active {
   color: rgb(255, 210, 10) !important;
-  outline: solid rgb(255, 210, 10) 2px;
+  border: solid rgb(255, 210, 10) 2px;
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 1);
-}
-
-#iconsContainer {
-  min-height: 275px;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .single-column-container {
@@ -150,10 +129,12 @@ html {
 
 .icon-column-inner {
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .icon-container {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 110px;
   height: 110px;
@@ -167,7 +148,7 @@ html {
 }
 
 .icon-description {
-  margin-top: 25px;
+  margin-top: 15px;
   text-align: center;
   text-transform: uppercase;
   font: normal normal normal 16px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
@@ -214,3 +195,31 @@ html {
 #mapImg {
   max-width: 325px;
 }
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .infoText {
+    font: normal normal normal 40px/1.1em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+  }
+
+  .subInfoText {
+    font: normal normal normal 25px/1.2em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+  }
+
+  .infoLinkText{
+    font: normal normal normal 23px/1.2em helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
