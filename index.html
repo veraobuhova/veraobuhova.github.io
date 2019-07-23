@@ -25,10 +25,17 @@
     <nav class="navbar navbar-expand-sm navbar-light bg-light py-0">
         <div id="navbar-nav-icons">
             <a class="nav-item nav-link nav-link-icon-ref" href="https://vk.com/psiholog_grodno">
-                <img src="./images/vk.webp" class="social-img"><img>
+                <img src="./images/vk.png" class="social-img"><img>
             </a>
-            <a class="nav-item nav-link nav-link-icon-ref" href="https://www.facebook.com/groups/psihologgrodno/">
-                <img src="./images/facebook.webp" class="social-img"><img>
+            <!-- Probably href="whatsapp://send?phone=79xxxxxxxxx" will also work -->
+            <a class="nav-item nav-link nav-link-icon-ref" href="https://api.whatsapp.com/send?phone=15551234567">
+                <img src="./images/whatsapp.png" class="social-img"><img>
+            </a>
+            <a class="nav-item nav-link nav-link-icon-ref" href="tg://resolve?domain=nikname">
+                <img src="./images/telegram.png" class="social-img" />
+            </a>
+            <a class="nav-item nav-link nav-link-icon-ref" href="viber://chat?number=+38xxxxxxxxxx">
+                <img src="./images/viber.png" class="social-img" />
             </a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavMarkup"
@@ -56,19 +63,17 @@
                 </div>
                 <div id="infoTextContainer" class="row no-gutters">
                     <div class="col-12 d-flex justify-content-center">
-                        <h4 class="infoText my-0">NATURE'S SUNSHINE</h4>
+                        <h4 class="infoText text-center my-0">NATURE'S SUNSHINE</h4>
                     </div>
                     <div class="col-12 d-flex justify-content-center">
-                        <h4 class="subInfoText mt-0 mb-2">Здоровье, Красота, Успешность</h4>
+                        <h4 class="subInfoText text-center mt-0 mb-2">Здоровье, Красота, Успешность</h4>
                     </div>
-                    <div class="col-12 d-flex justify-content-center">
-                        <div class="infoLinkContainer text-center mt-4 mb-4">
-                            <a class="infoLink infoLinkText" href="https://nsp25.com/signup?sid=559864" target="_blank">
-                                <span class="p-4 m-3">Оформить скидку на продукцию</span>
-                            </a>
-                        </div>
+                    <div class="col-12 d-flex infoLinkContainer text-center justify-content-center px-3 mb-1">
+                        <a class="infoLink infoLinkText" href="https://nsp25.com/signup?sid=559864" target="_blank">
+                            Оформить скидку на продукцию
+                        </a>
                     </div>
-                    <div class="col-12 d-flex justify-content-center">
+                    <div class="col-12 d-flex text-center justify-content-center">
                         <div class="infoNoteText mb-3">Номер Сервисного Центра в Гродно - 315</div>
                     </div>
                 </div>
@@ -78,35 +83,34 @@
         <div id="iconsContainer" class="row no-gutters theme-color-orange">
             <div class="single-column-container mx-auto">
                 <div class="row no-gutters">
-                    <div class="col icon-column">
+                    <div class="col-sm icon-column">
                         <div class="icon-column-inner">
                             <a href="http://natr.ru/catalog/bad" target="_blank">
                                 <div class="icon-container">
-                                    <img class="icon" src="images/pen.png" />
+                                    <img class="icon" src="images/catalog.png" />
                                 </div>
                                 <div class="icon-description">
-                                    <!--TODO маленькими буквами везде, отображается большими (нафига?)-->
                                     <div>Продукция<br />NSP</div>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div class="col icon-column">
+                    <div class="col-sm icon-column">
                         <div class="icon-column-inner">
                             <a href="http://natr.ru/pages/karera-v-nsp" target="_blank">
                                 <div class="icon-container">
-                                    <img class="icon" src="images/business.jpg" />
+                                    <img class="icon" src="images/business.png" />
                                 </div>
                                 <div class="icon-description">
                                     <div>Бизнес<br />в NSP</div>
                                 </div>
                         </div>
                     </div>
-                    <div class="col icon-column">
+                    <div class="col-sm icon-column">
                         <div class="icon-column-inner">
                             <a href="http://nsp25.ru" target="_blank">
                                 <div class="icon-container">
-                                    <img class="icon" src="images/lamp.png" />
+                                    <img class="icon" src="images/account.png" />
                                 </div>
                                 <div class="icon-description">
                                     <div>Личный<br />кабинет</div>
@@ -122,7 +126,7 @@
             <div class="single-column-container mx-auto">
                 <div class="container-fluid no-gutters px-0 pb-4 theme-font-dark">
                     <div class="row no-gutters">
-                        <div class="col article-header">
+                        <div class="col article-header px-2">
                             <div class="article-header-icon article-stroke-dark">
                                 <svg height="45" width="45"
                                     viewbox="-40.84429411764707 -33.41805882352942 334.1805882352941 319.32811764705883">
@@ -134,10 +138,12 @@
                         </div>
                     </div>
                     <div class="row no-gutters">
-                        <div id="aboutMeImg" class="col">
-                            <img src="images/photo.jpg" />
+                        <div id="aboutMeImgContainer" class="col-sm d-flex justify-content-center px-1">
+                            <div id="aboutMeImg">
+                                <img src="images/photo.jpg" />
+                            </div>
                         </div>
-                        <div class="col font_2 px-2">Я, Обухова Вера Дмитриевна - врач-педиатр, врач-нутрициолог.
+                        <div class="col-sm font_2 px-3">Я, Обухова Вера Дмитриевна - врач-педиатр, врач-нутрициолог.
                             Заниюмаюсь оздоровлением взрослых и детей,
                             осуществляя консультативную, профилактическую и лечебную работу.
                             Вместе будем здоровыми и успешными!</div>
@@ -148,9 +154,9 @@
         <!-- ROW 4 -->
         <div id="addressContainer" class="row no-gutters theme-color-orange">
             <div class="single-column-container mx-auto">
-                <div class="container-fluid no-gutters px-0 pb-4 theme-font-dark">
+                <div class="container-fluid no-gutters px-0 theme-font-dark">
                     <div class="row no-gutters">
-                        <div class="col article-header">
+                        <div class="col article-header px-2">
                             <div class="article-header-icon article-stroke-dark">
                                 <svg height="45" width="45"
                                     viewbox="-40.84429411764707 -33.41805882352942 334.1805882352941 319.32811764705883">
@@ -162,29 +168,74 @@
                         </div>
                     </div>
                     <div class="row no-gutters">
-                        <div class="col">
+                        <div id="contactsContainer" class="col-sm">
                             <div class="container-fluid no-gutters px-4">
-                                <div class="row no-gutters">+375(29)284-76-73 (МТС)</div>
-                                <div class="row no-gutters">vera8844@yandex.ru</div>
-                                <!--TODO вотсап, телеграм, вайбер с картинками-->
+                                <div class="row no-gutters pb-1">
+                                    <div class="contactIconContainer">
+                                        <img class="contactIcon" src="images/phone.png">
+                                    </div>
+                                    <a class="contactText link-text" href="tel:+375292847673">+375(29)284-76-73
+                                        (МТС)</a>
+                                </div>
+                                <div class="row no-gutters pb-1">
+                                    <div class="contactIconContainer">
+                                        <img class="contactIcon" src="images/email.png">
+                                    </div>
+                                    <a class="contactText link-text"
+                                        href="mailto:vera8844@yandex.ru">vera8844@yandex.ru</a>
+                                </div>
+                                <div class="row no-gutters pb-2">
+                                    <a href="https://vk.com/psiholog_grodno">
+                                        <img src="./images/vk.png" class="social-img1" />
+                                    </a>
+                                    <a href="https://api.whatsapp.com/send?phone=15551234567">
+                                        <img src="./images/whatsapp.png" class="social-img1" />
+                                    </a>
+                                    <a href="tg://resolve?domain=nikname">
+                                        <img src="./images/telegram.png" class="social-img1" />
+                                    </a>
+                                    <a href="viber://chat?number=+38xxxxxxxxxx">
+                                        <img src="./images/viber.png" class="social-img1" />
+                                    </a>
+                                </div>
+                                <div id="storeAddressContainer" class="row no-gutters pb-3">
+                                    <div class="contactIconContainer">
+                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="12.5 12.5 175 175"
+                                            preserveAspectRatio="xMidYMid meet" width="35" height="35" data-type="color"
+                                            data-bbox="12.5 12.5 175 175">
+                                            <g>
+                                                <path fill="#003449"
+                                                    d="M 100 187.5 c 48.248 0 87.5 -39.252 87.5 -87.5 S 148.248 12.5 100 12.5 S 12.5 51.752 12.5 100 s 39.252 87.5 87.5 87.5 Z m 0 -170 c 45.49 0 82.5 37.01 82.5 82.5 s -37.01 82.5 -82.5 82.5 s -82.5 -37.01 -82.5 -82.5 S 54.51 17.5 100 17.5 Z"
+                                                    data-color="1" />
+                                                <path fill="#003449"
+                                                    d="M 53.755 146.352 h 39.789 v -20.687 h 12.865 v 20.687 h 39.79 V 96.219 H 53.755 v 50.133 Z m 5 -45.133 h 82.444 v 40.133 h -29.79 v -20.687 H 88.544 v 20.687 H 58.755 v -40.133 Z"
+                                                    data-color="1" />
+                                                <path fill="#003449"
+                                                    d="M 99.998 45.311 L 49.052 88.995 h 102.002 L 99.998 45.311 Z m 0.004 6.584 l 37.517 32.101 H 62.563 l 37.439 -32.101 Z"
+                                                    data-color="1" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="contactText">Гродно: Калиновского 60</div>
+                                </div>
                             </div>
                         </div>
-                        <div id="mapImg" class="col">
-                            <!--TODO надпись: Адрес склада в Гродно: Калиновского 60-->
-                            <img src="images/map.png" />
-                            <!--можно отсюда вырезать местонахождение https://happynsp.com/nsp-v-grodno/-->
+                        <div class="col-sm">
+                            <div id="mapImgContainer" class="mx-auto">
+                                <img id="mapImg" src="images/map.png" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- FOOTER -->
-        <footer class="row no-gutters">
-            <div class="single-column-container mx-auto">
+        <footer class="row no-gutters theme-color-orange">
+            <div class="single-column-container mx-auto pt-2">
                 <div class="row no-gutters">
                     <div class="col">
-                        <div class="copyright-text text-center">
-                            <span class="alt-font font-weight-bold">© 2019 Вера Обухова. Врач-нутрициолог. Беларусь г.
+                        <div class="text-center">
+                            <span class="footer-text ">© 2019 Вера Обухова. Врач-нутрициолог. Беларусь г.
                                 Гродно</span>
                         </div>
                     </div>
@@ -192,7 +243,5 @@
             </div>
         </footer>
 </body>
-
-<!-- <script src="scripts/main.js"></script> -->
 
 </html>
